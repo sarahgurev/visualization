@@ -53,7 +53,8 @@
 				20 year increase on the side are there to stress the fact that climate change is in fact increasing- and that this should be the takeaway. I think this title and labels worked well, though I considered a larger, more descriptive title I felt
 				that this was more engaging. I also considered adding a source to the plot, but ultimately decided against needing it. 
 				<li>RATIONALE_4</li> 2 The data transformation to facilitate this wave appearance was complicated, and I tried many different transformations in attempt to achieve both clarity for the viewer as well as get the proper sense of increase over time. 
-				I wanted each year to represent the increase in maximum change - so that a new color would only show in the case of an increase (to get the wave effect). I also wanted the total to be meaningful (i.e. I did not want for each year to be the full height of that year's change in sea level). 
+				I wanted each year to represent the increase in maximum change - so that a new color would only show in the case of an increase (to get the wave effect). I also wanted the total to be meaningful (i.e. I did not want for each year to be the full height of that year's change in sea level, as that would not make sense summed across years). Instead the increase across all years (and so total height for each sea) represents the difference between the maximum and minimum change in year-averaged sea level for that sea. 
+				The years appear in order, so the cumulative increased change in sea level rise (in lighter blues to white) over the past 20 years can be seen. 
 				Therefore, I computed the maximum for a given sea up to each year and then differences between years. I wanted this tranformation to be hidden however, for it to appear simple and obvious to the viewer (even though something complicated was happening underneath). This was difficult as already change in sea level 
 				is a difficult concept to grasp (as opposed to sea level where the total height could then always be the total height up to a given year when that year represents an increase over the previous maximum). I'd considered taking an arbitrary start at 0, and using the changes in 
 				sea level to compute sea level value instead of continuing with the change in sea level. However, these numbers become large and harder I believe to understand the scale (and starting with an arbitrary 0 height is confusing, and add another layer of abstraction for the viewers to understand).
@@ -66,7 +67,7 @@
       <figure>
 				<img src="con2.png" alt="" style="width: 55vw; min-width: 330px;"/>
 				<figcaption>
-          		Minimum annual surface temperature change across countries relative to a 20-year average change. Far from global warming occuring, the change in surface temperature is decreasing over the past year.
+          		Minimum annual surface temperature change across countries relative to a 20-year average change. Far from global warming occuring, the change in surface temperature has been flat, and is even decreasing over the past year.
 				</figcaption>
 			</figure>
 
@@ -83,7 +84,7 @@
 				<li>RATIONALE_2</li> -2 The choice of the past 20 years is however the largest deception, more so than the choice of minimum. If the plot had been allowed to continue 
 				earlier in time, viewers could have seen that there has in fact been a large increased change over time (even when considering the minimum rather than the average value). In order to make it clear
 				that there hasn't been a large increase, I then recalculated the y-axis with respect to the 20-year average - so there was a new 0 value (otherwise all numbers would have been high above 0, and it would 
-				be clear an increase had happened). It makes it seem like things have been mostly flat (instead of increasing), with that little note on the end that if it's not flat, it is even decreasing! There is no question therefore that this choice was absolutely deceptive. 
+				be clear an increase had happened). It makes it seem like things have been mostly flat (instead of increasing), with that little note on the end that if it's not flat, it is even decreasing! There is no question therefore that this choice was absolutely deceptive. Moreover, 20 years is large enough that it is attempting to deceive a viewer that is a large enough scale to see change (a viewer wouldn't believe for instance 2 or 5 years is large enough to expect an increase, but 20 seems large). 
 				<li>RATIONALE_3</li> 2 To belie the fact that the underlying choices of data transformation and scale were deceptive, I then attempted to make every other design choice as simple and straightforward as possible.
 				This would encourage viewers to believe nothing untoward was happening - because there is nowhere to hide in a simple line graph. Therefore, I stuck with a very simple single line graph as the only value plotted on this graph. 
 				To add dramatic flourish, as if to say 'not only is global warming not a thing, we could even be experiencing global cooling, so how can we trust climate change' - I add the arrow signal to the end of the final point on 
@@ -98,12 +99,25 @@
     <section>
       <h2>Final Reflection</h2>
 
-      <p>Rather than on the visualizations themselves, I used deception in the hidden, underlying data transformations. This avoids there being any clear "gotchas" where overlapping lines or other clear visualization faults can be easily pointed out. Instead, I strived to make my deceptive visualization as straightforward as possible, as if to say its so clean there can't possible be any bodies buried there. 
+      <p>Rather than on the visualizations themselves, I used deception in the hidden, underlying data transformations. 
+		This avoids there being any clear "gotchas" where overlapping lines or other clear visualization faults can be easily pointed out.
+		 Instead, I strived to make my deceptive visualization as straightforward as possible, as if to say its so clean there can't possible be any bodies buried there. 
 		Yet, once these deceptive choices have been made in the underlying data transformation and limits, 
 		  it poisons the later "earnest" choices, making them fruit of a poisonous tree and it becomes impossible 
 		  to separate what is deceptive and what is earnest. </p>
 		
-		  <p></p>
+		  <p>It surprised me how easy it was to create a deceptive data tranformation that fit what I knew to be climate change skeptic rhetoric - 
+			the idea that climate scientists don't know what they are talking about, it used to be global cooling, now its warming, what is it really? 
+			I would have thought I would have needed to try many different possible transformation (and much more complicated ones involving certain points
+			 left out or other such deceptive tactics), but I surprisingly didn't. By simply showing the last 20 years instead of a larger time scale (where 
+			 effects are more meaningful when considering large time periods), and us by chance having a decrease in the past year when considering the minimum 
+			 temperature, I was easily able to craft a deceptive narrative with limited forcing of the data. I consider it misleading to make design choices greatly 
+			 outside of what is expected to espouse a certain point of view (minimum rather than mean) and to choose arbitrary thresholds. Normally I think of hidden
+			 thresholds in terms of data binning (as this isn't even visible on a plot the way axis limits are), but I now believe purposely chosen axis limits 
+			 (despite the limits not being hidden) but chosen to hide a different trend outside of those limits (an increase over time that is hidden when looking 
+			 only at a 20 year time scale) is equally damaging. 20 years is large enough that it 
+			 is attempting to deceive a viewer that is a large enough scale to see change (a viewer wouldn't believe for instance 2 or 5 years is large enough to 
+			 expect an increase, but 20 seems large). Neither of these choices even approach acceptable design decisions.   </p>
 	
 
     </section>
