@@ -38,11 +38,24 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE_1</li> 2 I wanted to be engaging - I made by design choices around "looking like a wave" - to get people interested and want to talk and share about this issue. Color by year. 
-				<li>RATIONALE_2</li> 2 Black backgroun with white text is likewise unique and engaging. It makes the wave pop out. 
-				<li>RATIONALE_3</li> 2 The title refers to the wave. while highlighting the increase that is happening. 
-				<li>RATIONALE_4</li> 1 The data transformation to facilitate this wave appearance was complicated. 
-			</ul>
+				<li>RATIONALE_1</li> 2 My ultimate goal was to create an engaging figure that draws viewers into it- I therefore made all my design choices around "looking like a wave". 
+				As a society we are inundated with information overload about climate change, so my goal was to show something that is visually different to get people interested and
+				 want to talk and share about this issue. I therefore started out this plot with the goal of making a wave effect - a wave that is increasing over time - to give viewers 
+				 the sense of motion and action, that something is coming. This wave shape is facilated by a streamplot - with colors for each year ordered from earlier years (with smaller changes in mean sea level) in darker blue to later years in lighter blue to almost white. 
+				 The white of a wave represents a turbulent motion - the wave is about to crash. This makes the visualization both engaging and persuasive, that there is a great negative impact
+				 to climate change over the past 20 years, and implies without saying it explicitly that this is a problem that will continue to worsen. I wasn't sure if I needed the colorbar for the years, or if the labels
+				 for the years on the right were sufficient to get people to understand the different colors represented different years over time - but then figured the colorbar doesn't detract from the overall image and if it makes people understand faster what is happening then that is better. 
+				<li>RATIONALE_2</li> 2 I chose a black backgroun with white text because it is likewise unique and engaging. Both the color and the grid appearing behind the streamplot are designed to make 
+				the wave feel like it is literally coming out of the page to splash the viewer. I'd started out with a "normal" white background for the figure - and the wave just didn't pop out of the page as much as it does on black (I would ultimately have to consider the final destination for the image in another setting, 
+				i.e., if it was intended to be included in a book printed, the black background would not be as ideal). I also didn't originally have the grid (since I normally find grid lines distracting - and appreciate the story blank space on a figure tells) - but here with the wave already popping so much out of the page- the 
+				grid only serves to increase the 3D effect, with it in the background of the figure. 
+				<li>RATIONALE_3</li> 2 The title again likewise refers to the wave, while highlighting the fact that it is an increased change in sea level that is currently happening. This title and the annotated 
+				20 year increase on the side are there to stress the fact that climate change is in fact increasing- and that this should be the takeaway. I think this title and labels worked well, though I considered a larger, more descriptive title I felt
+				that this was more engaging. I also considered adding a source to the plot, but ultimately decided against needing it. 
+				<li>RATIONALE_4</li> 2 The data transformation to facilitate this wave appearance was complicated, and I tried many different transformations in attempt to achieve both clarity for the viewer as well as get the proper sense of increase over time. 
+				I wanted each year to represent the increase in maximum change - so that a new color would only show in the case of an increase (to get the wave effect). I also wanted the total to be meaningful (i.e. I did not want for each year to be the full height of that year's change in sea level). 
+				Therefore, I computed the maximum for a given sea up to each year and then differences between years. I wanted this tranformation to be hidden however, for it to appear simple and obvious to the viewer (even though something complicated was happening underneath).
+			</ul> 
     </section>
 
     <section>
