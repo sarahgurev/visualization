@@ -54,7 +54,9 @@
 				that this was more engaging. I also considered adding a source to the plot, but ultimately decided against needing it. 
 				<li>RATIONALE_4</li> 2 The data transformation to facilitate this wave appearance was complicated, and I tried many different transformations in attempt to achieve both clarity for the viewer as well as get the proper sense of increase over time. 
 				I wanted each year to represent the increase in maximum change - so that a new color would only show in the case of an increase (to get the wave effect). I also wanted the total to be meaningful (i.e. I did not want for each year to be the full height of that year's change in sea level). 
-				Therefore, I computed the maximum for a given sea up to each year and then differences between years. I wanted this tranformation to be hidden however, for it to appear simple and obvious to the viewer (even though something complicated was happening underneath).
+				Therefore, I computed the maximum for a given sea up to each year and then differences between years. I wanted this tranformation to be hidden however, for it to appear simple and obvious to the viewer (even though something complicated was happening underneath). This was difficult as already change in sea level 
+				is a difficult concept to grasp (as opposed to sea level where the total height could then always be the total height up to a given year when that year represents an increase over the previous maximum). I'd considered taking an arbitrary start at 0, and using the changes in 
+				sea level to compute sea level value instead of continuing with the change in sea level. However, these numbers become large and harder I believe to understand the scale (and starting with an arbitrary 0 height is confusing, and add another layer of abstraction for the viewers to understand).
 			</ul> 
     </section>
 
